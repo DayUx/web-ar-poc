@@ -1,0 +1,9 @@
+<div class="debug">
+  <span *ngFor="let distance of distances">{{ distance }}</span>
+</div>
+<span class="mycoords">{{mycoords?.coords?.latitude}} {{mycoords?.coords?.longitude}}</span>
+<a-scene #scene vr-mode-ui='enabled: false' arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: true'
+         renderer='antialias: true; alpha: true'>
+  <a-camera arjs-device-orientation-controls='smoothingFactor: 0.1'
+            gps-new-camera='gpsMinDistance: 0.01;positionMinAccuracy:100'></a-camera>
+</a-scene>

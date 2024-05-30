@@ -1,0 +1,38 @@
+.arjs-loader {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arjs-loader div {
+  text-align: center;
+  font-size: 1.25em;
+  color: white;
+}
+
+.coords{
+  position: fixed;
+  z-index: 10000;
+}
+.debug {
+  z-index: 1000;
+  position: fixed;
+  display: flex
+;flex-direction: column;
+}
+:host {
+  color: #0f0;
+}
+.mycoords {
+  position: fixed;
+  bottom: 0;
+  z-index: 10000;
+
+}

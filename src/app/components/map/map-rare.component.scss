@@ -1,0 +1,13 @@
+mgl-map {
+  height: 100%;
+  width: 100%;
+}
+button {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 10px;
+  z-index: 1000;
+  padding: 10px;
+}

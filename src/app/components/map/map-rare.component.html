@@ -1,0 +1,13 @@
+<mgl-map
+  [style]="'https://api.maptiler.com/maps/basic-v2/style.json?key=PZJbfL6N2Mes2lgfRHFX'"
+  [zoom]="zoom"
+  [center]="center"
+(mapClick)="doubleClick($event)"
+>
+
+  <mgl-marker [color]="'#f00'" [lngLat]="markerPosition" ></mgl-marker>
+  <mgl-marker *ngFor="let coordinate of coordinates" [lngLat]="coordinate">
+
+  </mgl-marker>
+</mgl-map>
+<button (click)="scan()">AR</button>
